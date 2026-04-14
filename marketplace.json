@@ -1,0 +1,17 @@
+{
+  "$schema": "https://github.com/github/copilot-cli/raw/main/schemas/marketplace.schema.json",
+  "name": "andreasheige-copilot-seo",
+  "owner": {
+    "name": "andreasheige"
+  },
+  "metadata": {
+    "description": "SEO analysis tools for GitHub Copilot CLI"
+  },
+  "plugins": [
+    {
+      "name": "copilot-seo",
+      "source": "./",
+      "description": "Comprehensive SEO plugin for GitHub Copilot CLI. 19 skills covering technical SEO, E-E-A-T, schema markup, Core Web Vitals, hreflang, GEO/AEO, backlinks, local SEO, and Google API integration (GSC, PageSpeed, CrUX, GA4)."
+    }
+  ]
+}
