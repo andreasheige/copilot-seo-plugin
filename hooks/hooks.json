@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "bash": "python3 \"$(dirname \"$0\")/../hooks/validate-schema.py\" \"${FILE_PATH:-}\" 2>/dev/null || true",
+        "timeoutSec": 15
+      }
+    ]
+  }
+}

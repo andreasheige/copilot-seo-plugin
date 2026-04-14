@@ -1,0 +1,31 @@
+{
+  "name": "copilot-seo",
+  "description": "Comprehensive SEO analysis for GitHub Copilot CLI. Covers technical SEO, Core Web Vitals, schema markup, content quality (E-E-A-T), sitemaps, hreflang, AI search optimization (GEO), local SEO, backlinks, and Google API integration (PageSpeed, Search Console, CrUX, GA4).",
+  "version": "1.0.0",
+  "author": {
+    "name": "copilot-seo contributors",
+    "url": "https://github.com/andreasheige/copilot-seo"
+  },
+  "homepage": "https://github.com/andreasheige/copilot-seo",
+  "repository": "https://github.com/andreasheige/copilot-seo",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "technical-seo",
+    "core-web-vitals",
+    "schema-markup",
+    "e-e-a-t",
+    "hreflang",
+    "sitemap",
+    "google-search-console",
+    "pagespeed",
+    "crux",
+    "ga4",
+    "backlinks",
+    "geo",
+    "ai-search"
+  ],
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks/hooks.json"
+}
