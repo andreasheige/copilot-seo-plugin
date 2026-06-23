@@ -106,7 +106,7 @@ Save to `~/.config/copilot-seo/google-api.json`:
 ## Step 8: Verify Setup
 
 ```bash
-python scripts/google_auth.py --check
+~/.local/bin/copilot-seo-python ~/.local/share/copilot-seo/scripts/google_auth.py --check
 ```
 
 Expected output at Tier 2 (full):

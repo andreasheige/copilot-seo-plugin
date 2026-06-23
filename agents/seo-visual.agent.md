@@ -24,7 +24,7 @@ pip install playwright && playwright install chromium
 
 ## Screenshot Script
 
-Use the screenshot script (`scripts/capture_screenshot.py` in the plugin root) for browser automation:
+Use the screenshot script (`~/.local/share/copilot-seo/scripts/capture_screenshot.py` in the plugin root) for browser automation:
 
 ```python
 from playwright.sync_api import sync_playwright

@@ -123,7 +123,7 @@ preset format (see `references/presets.md` for schema details).
 
 Users can create their own presets:
 ```bash
-python3 ~/.claude/skills/seo-image-gen/scripts/presets.py create my-brand
+~/.local/bin/copilot-seo-~/.local/bin/copilot-seo-python ~/.local/share/copilot-seo/scripts/presets.py create my-brand
 ```
 
 This creates `~/.banana/presets/my-brand.json` with the full schema.

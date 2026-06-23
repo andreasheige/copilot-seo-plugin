@@ -1,10 +1,17 @@
 {
   "version": 1,
   "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "PLUGIN_DIR=$(find ~/.copilot/installed-plugins -path '*/copilot-seo/scripts' -type d 2>/dev/null | head -1 | xargs -I{} dirname {}) && [ -n \"$PLUGIN_DIR\" ] && bash \"$PLUGIN_DIR/hooks/bootstrap.sh\" \"$PLUGIN_DIR\" || true",
+        "timeoutSec": 60
+      }
+    ],
     "postToolUse": [
       {
         "type": "command",
-        "bash": "python3 \"$(dirname \"$0\")/../hooks/validate-schema.py\" \"${FILE_PATH:-}\" 2>/dev/null || true",
+        "bash": "[ -n \"${FILE_PATH:-}\" ] && python3 ~/.local/share/copilot-seo/scripts/../hooks/validate-schema.py \"$FILE_PATH\" 2>/dev/null || true",
         "timeoutSec": 15
       }
     ]
